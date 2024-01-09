@@ -1,0 +1,302 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #585c79;
+    font-size: 100%;
+}
+
+header,
+footer {
+    background-color: #d5d4c5;
+    color: #100b20;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    display: flex;
+}
+
+
+.columna-secundaria {
+    width: 35%;
+    background-color: #898c9b;
+    padding: 20px;
+    flex-wrap: wrap;
+
+}
+
+.columna-principal {
+    width: 65%;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.redes-sociales {
+    flex-direction: column;
+}
+
+.redes-sociales a {
+    width: 6em;
+    height: 6em;
+}
+
+.redes-sociales a:hover {
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
+.redes-sociales img {
+    width: 6em;
+    height: 6em;
+}
+
+@media (max-width: 580px) {
+    .columna-secundaria h2 {
+        font-size: 1.7em;
+    }
+}
+
+h2 {
+    font-family: Helvetica, arial, helvetica;
+    font-weight: 750;
+    font-size: 1.8em;
+    color: #280231;
+}
+
+.destacado {
+    text-align: center;
+}
+
+.pelis-destacadas {
+    margin-bottom: 20px;
+    border: 1px solid #1d1534;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.pelis-destacadas button {
+    cursor: pointer;
+    background-color: inherit;
+    border: none;
+    max-width: 100px;
+    max-height: 200px;
+    margin-right: 15px;
+    float: left;
+}
+
+.pelis-destacadas .botones {
+    float: left;
+}
+
+.pelis-destacadas .info {
+    margin-right: 15px;
+}
+
+
+.pelis-destacadas img {
+    max-width: 100px;
+    max-height: 200px;
+}
+
+.pelis-destacadas img:hover {
+    filter: brightness(50%);
+    cursor: pointer;
+}
+
+.pelis-destacadas .sipnosis {
+    font-size: 0.9em;
+    text-align: justify;
+    display: block;
+}
+
+.pelis-destacadas .sipnosis:hover {
+    background-color: #5036a4;
+    transition: background-color 0.5s ease;
+    overflow: hidden;
+
+}
+
+.pelis-destacadas br {
+    display: block;
+    content: "";
+    margin-top: 0;
+}
+
+.marketing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #f6aca2;
+    --color-secondary: #f07a6a;
+    --color-tertiary: #ee6352;
+
+}
+
+.frase-marketing {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #280231;
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+        9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+    font-family: bungee, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin: 0;
+    color: var(--color-primary);
+    animation: shadows 2.5s ease-in infinite, move 2.5s ease-in infinite;
+    letter-spacing: 0.4rem;
+    width: 50%;
+}
+
+@keyframes shadows {
+    0% {
+        text-shadow: none;
+    }
+
+    30% {
+        text-shadow: 3px 3px 0 var(--color-secondary);
+    }
+
+    40% {
+        text-shadow: 3px 3px 0 var(--color-secondary),
+            6px 6px 0 var(--color-tertiary);
+    }
+
+    80% {
+        text-shadow: 3px 3px 0 var(--color-secondary),
+            6px 6px 0 var(--color-tertiary);
+    }
+
+    90% {
+        text-shadow: 3px 3px 0 var(--color-secondary);
+    }
+
+    100% {
+        text-shadow: none;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    40% {
+        transform: translate(-12px, -12px);
+    }
+
+    50% {
+        transform: translate(-12px, -12px);
+    }
+
+    60% {
+        transform: translate(-12px, -12px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+.pelicula-marketing {
+    width: 50%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+}
+
+.pelicula-marketing img {
+    height: 100%;
+    max-height: 2*max-width;
+    max-width: 100%;
+}
+
+.pelicula-marketing h3 {
+    color: #ee6352;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .pelicula-marketing .peli3 {
+        display: none;
+    }
+
+    .pelicula-marketing .img3 {
+        display: none;
+    }
+
+
+}
+
+@media only screen and (max-width: 414px) {
+
+    .pelicula-marketing .peli2,
+    .peli3 {
+        display: none;
+    }
+
+    .pelicula-marketing .img2,
+    .img3 {
+        display: none;
+    }
+}
+
+.redes-sociales {
+    height: 20%;
+}
+
+.redes-sociales a {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.comentarios {
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.comentarios .comentario {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+
+.comentarios img {
+    width: 50px;
+    height: 90px;
+    float: left;
+}
+
+.comentario br {
+    display: block;
+    content: "";
+    margin-top: 0;
+}
+
+.comentarios .rating {
+    text-align: justify;
+}
